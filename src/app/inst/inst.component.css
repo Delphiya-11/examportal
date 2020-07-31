@@ -1,0 +1,22 @@
+header {
+    background-color: black;
+    color: cadetblue;
+    height: 8vw;
+    text-align: center;
+    position: relative;
+    font-size: 7vh; 
+}
+  
+  .container{
+    align-content: initial
+  }
+  .wrapper {
+    text-align: center;
+}
+
+
+  .a {    
+    font-size: 30px;
+    margin-left: 60px;
+    text-align: justify;
+  }
