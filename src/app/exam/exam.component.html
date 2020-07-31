@@ -1,10 +1,10 @@
-  <div class="header">
+<div class="header">
     <h2>Answer the Questions!</h2>
-  </div>
-  <br>
-  <br>
-  <br>
-  <div class="row">
+</div>
+<br>
+<br>
+<br>
+<div class="row">
     <div class="col-3 menu">
         <div class="row">
             <div class="col-sm-4">
@@ -15,37 +15,41 @@
                 <button type="button" class="btn btn-success" (click)="selectQuestion(5)">5</button><br><br>
             </div>
             <div class="col-sm-4">
-                
+
                 <button type="button" class="btn btn-success" (click)="selectQuestion(6)">6</button><br><br>
                 <button type="button" class="btn btn-success" (click)="selectQuestion(7)">7</button><br><br>
                 <button type="button" class="btn btn-success" (click)="selectQuestion(8)">8</button><br><br>
                 <button type="button" class="btn btn-success" (click)="selectQuestion(9)">9</button><br><br>
                 <button type="button" class="btn btn-success" (click)="selectQuestion(10)">10</button><br><br>
             </div>
-          </div>
+        </div>
     </div>
     <div class="col-9">
-      <h3>Questions</h3>
-      <br>
-      <font size=5>
-          <div *ngFor="let question of questions">
-            <div *ngIf="selected">
-              <p>{{question.qid}}.  {{question.qname}}</p>
-              <br>
-                <input type="radio" name="Option" value="{{question.opno_1}}" [(ngModel)]="Op" (click)="updateAnswer(question.opno_1)"><font size=4> {{question.opno_1}}</font><br>
-                <br>
-                <input type="radio" name="Option" value="{{question.opno_2}}" [(ngModel)]="Op" (click)="updateAnswer(question.opno_2)"><font size=4> {{question.opno_2}}</font><br>
-                <br>
-                <input type="radio" name="Option" value="{{question.opno_3}}" [(ngModel)]="Op" (click)="updateAnswer(question.opno_3)"><font size=4> {{question.opno_3}}</font><br>
-                <br>
-                <input type="radio" name="Option" value="{{question.opno_4}}" [(ngModel)]="Op" (click)="updateAnswer(question.opno_4)"><font size=4> {{question.opno_4}}</font><br>
-                <br>
+        <h3>Questions</h3>
+        <br>
+        <font size=5>
+            <div *ngFor="let question of questions">
+                <div *ngIf="selected">
+                    <p>{{question.qid}}. {{question.qname}}</p>
+                    <br>
+                    <input type="radio" name="Option" value="{{question.opno_1}}" [(ngModel)]="Op" (click)="updateAnswer(question.opno_1)">
+                    <font size=4> {{question.opno_1}}</font><br>
+                    <br>
+                    <input type="radio" name="Option" value="{{question.opno_2}}" [(ngModel)]="Op" (click)="updateAnswer(question.opno_2)">
+                    <font size=4> {{question.opno_2}}</font><br>
+                    <br>
+                    <input type="radio" name="Option" value="{{question.opno_3}}" [(ngModel)]="Op" (click)="updateAnswer(question.opno_3)">
+                    <font size=4> {{question.opno_3}}</font><br>
+                    <br>
+                    <input type="radio" name="Option" value="{{question.opno_4}}" [(ngModel)]="Op" (click)="updateAnswer(question.opno_4)">
+                    <font size=4> {{question.opno_4}}</font><br>
+                    <br>
+                </div>
             </div>
-          </div>
-      </font>
+        </font>
     </div>
     <div class="col-9 wrapper2">
-      <button type="submit" class="btn btn-primary" (click)="reset()">Clear</button>
-      <button type="submit" class="btn btn-success" (click)="storeMarks()" routerLink="/thanks">Submit</button>
+        <button type="submit" class="btn btn-primary" (click)="reset()">Clear</button>
+        <button type="submit" class="btn btn-success" (click)="storeMarks()" routerLink="/thanks">Submit</button>
     </div>
-  </div>
+</div>

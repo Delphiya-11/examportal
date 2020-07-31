@@ -31,10 +31,10 @@ export class ExamComponent implements OnInit {
   constructor(private apiService: ApiService) { }
 
   ngOnInit() {
-    /*this.apiService.readQuestions(1).subscribe((questions: Question[])=>{
-      this.questions = questions;
-      console.log(questions);
-    })*/
+    // this.apiService.readQuestions(1).subscribe((questions: Question[])=>{
+    //   this.questions = questions;
+    //   console.log(questions);
+    // })
     this.selectQuestion(1);
     this.resl.fill(0, 0, 1);
   }

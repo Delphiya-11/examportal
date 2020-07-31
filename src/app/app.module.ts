@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { InstComponent } from './inst/inst.component';
 import { ExamComponent } from './exam/exam.component';
-import { MatRadioModule } from '@angular/material';
+import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 
@@ -22,7 +22,7 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    MatRadioModule,
+    MatDialogModule,
     FormsModule
   ],
   providers: [],

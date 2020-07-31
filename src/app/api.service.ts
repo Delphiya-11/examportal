@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Question } from  './question';
 import { Answer } from './answer';
 import { Result } from './result';
@@ -21,9 +21,9 @@ export class ApiService {
   selectQuestion(qid: number): Observable<Question[]>{
     return this.httpClient.get<Question[]>(this.PHP_API_SERVER + '/backend/php/api/read.php/?qid='+qid);
   }
-  
+
   /*updateAnswer(answer: Answer){
-    return this.httpClient.post<Answer>(this.PHP_API_SERVER + '/backend/php/api/updateAnswers.php', answer);   
+    return this.httpClient.post<Answer>(this.PHP_API_SERVER + '/backend/php/api/updateAnswers.php', answer);
   }*/
 
   /*selectCorans(qid: number): Observable<Question[]>{
